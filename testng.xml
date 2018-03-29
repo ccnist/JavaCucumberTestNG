@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Verify Links" verbose="1" parallel="tests" thread-count="1" configfailurepolicy="continue">
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="http://erail.in"/>
+    <parameter name="scenarios" value="features/login.feature"/>
+    <parameter name="tags" value="@project"/>
+    <test name="BrokenLinksOnPages">
+       <classes>
+           <class name="com.foundation.core.TestRunner"/>
+        </classes>
+    </test>
+</suite>
